@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Work-5</title>
+    <title>Home-Work-6</title>
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -381,8 +381,41 @@
     <div class="backdrop is-hidden " data-modal >
         <div class="modal">
             <button type="button" class="button-open" data-modal-close >
-                ✖
+                &#215
             </button>
+            <b class="model-headline">Оставьте свои данные, мы вам перезвоним</b>
+          <form action="" class="model-form">
+              <label for="Name" class="form-input-box">
+                  Имя
+                  <input type="text" name="user-name" id="" class="form-input" required>
+                  <svg width="16" height="16" class="modal-icon">
+                      <use href="./modal-svg/symbol-defs.svg#icon-Vector"></use>
+                  </svg>
+              </label>
+            <label for="tel" class="form-input-box">
+                Телефон
+                <input type="tel" name="tel" id="" class="form-input" required pattern="[0-9]{10}" title="0500505050">
+                <svg width="18" height="18" class="modal-icon">
+                    <use href="./modal-svg/symbol-defs.svg#icon-phone-black"></use>
+                </svg>
+            </label>
+            <label for="email" class="form-input-box">
+                Почта
+                <input type="email" name="" id="" class="form-input" required>
+                <svg width="18" height="18" class="modal-icon">
+                    <use href="./modal-svg/symbol-defs.svg#icon-email-black"></use>
+                </svg>
+            </label>
+            <label for="Name" class="form-input-box">
+                Коментарий 
+                <textarea name="user-msg" id="" class="form-msg" placeholder="Введите текст"></textarea>
+            </label>
+            <input type="checkbox" class="checkbox-policy" id="checkbox-policy">
+            <label for="checkbox-policy" class="checkbox-modal">
+                Соглашаюсь с рассылкой и принимаю &nbsp <a href="">Условия договора</a>
+            </label>
+            <button type="submit" class="form-submit-buttom">Отправить</button>
+          </form>
         </div>
     
     </div>
